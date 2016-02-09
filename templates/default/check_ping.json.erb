@@ -1,0 +1,15 @@
+{
+  "checks": {
+    "ping_check": {
+      "handlers" : ["pagerduty"],
+      "command": "/etc/sensu/plugins/check-ping.rb -h www.yourdomain.com -T 10",
+      "subscribers": [
+        "ALL"
+      ],
+      "interval" : 30,
+      "occurrences": 2,
+      "refresh": 10
+
+    }
+  }
+}

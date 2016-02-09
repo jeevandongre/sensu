@@ -1,0 +1,11 @@
+name             'sensu'
+maintainer       'Jeevan Dongre'
+maintainer_email 'jeevan.dongre@gmail.com'
+license          'all_rights'
+description      'Installs/Configures sensu'
+long_description 'Installs/Configures sensu'
+version          '0.1.0'
+
+depends 'rabbitmq'
+depends 'uchiwa'
+depends 'apt'

@@ -1,0 +1,12 @@
+[
+    		{rabbit, [
+            {ssl_listeners, [<%= @port %>]},
+            {ssl_options, [{cacertfile, "<%= @ca_cert %>"},
+            {certfile, "<%= @cert %>"},
+            {keyfile, "<%= @key %>"},
+                   {verify,verify_peer},
+                   {fail_if_no_peer_cert,true}]}
+  		]}
+].
+
+

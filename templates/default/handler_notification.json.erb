@@ -1,0 +1,16 @@
+{  
+    "handlers": {
+    "sns": {
+      "type": "pipe",
+      "command": "/etc/sensu/handlers/sns.rb"
+    },
+    "mailer": {
+      "type": "pipe",
+      "command": "/etc/sensu/handlers/mailer.rb"
+    },
+    "pagerduty": {
+      "type": "pipe",
+      "command": "/etc/sensu/handlers/pagerduty.rb"
+    }
+  }
+}
